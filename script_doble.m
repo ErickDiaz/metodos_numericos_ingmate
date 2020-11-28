@@ -1,4 +1,4 @@
 %Script para calcular el doble de un numero
 
-x=3;
+x=4;
 y=2*x
