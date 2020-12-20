@@ -3,4 +3,4 @@
 
 Ejercicios de clase en matlab 
 
-<link href="metodo_euler/metodo_euler.html" rel="import" />
+<div w3-include-html="metodo_euler/metodo_euler.html"></div>
