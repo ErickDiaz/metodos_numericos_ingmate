@@ -14,6 +14,6 @@ for k=1:N
     k4 = h*feval(f, x(k) + h, y(k,:) + k3)';
     y(k+1,:) = y(k,:) + (k1 + 2*k2 + 2*k3 + k4)/6;
     
-    x(k) = a + k*h;
+    x(k+1) = a + k*h;
 end
 end
