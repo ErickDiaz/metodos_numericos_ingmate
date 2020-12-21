@@ -5,7 +5,7 @@ x = x(:);
 
 y = zeros(N+1, length(y0));
 
-y(1,:) = y0
+y(1,:) = y0;
 
 for k=1:N
     k1 = h*feval(f, x(k), y(k,:))';
