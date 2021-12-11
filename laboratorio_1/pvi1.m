@@ -1,5 +1,0 @@
-function [dy] = pvi1(x,z)
-y1=z(1);
-y2=z(2);
-dy=[y2; 2*y2 - 5*y1];
-end
