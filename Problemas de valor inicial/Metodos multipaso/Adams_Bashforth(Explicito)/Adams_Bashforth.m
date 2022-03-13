@@ -1,6 +1,6 @@
 function [x, y] = Adams_Bashforth(f, a, b, N, y0)
     h = (b-a)/N;
-    x = [a:h:b];
+    x = a:h:b;
     x = x(:);
     
     %orden 4

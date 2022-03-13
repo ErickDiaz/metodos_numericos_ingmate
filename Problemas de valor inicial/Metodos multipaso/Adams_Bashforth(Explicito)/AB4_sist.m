@@ -1,4 +1,4 @@
-function [x, y] = AB4_sist(f, a, b, N, y0)
+ function [x, y] = AB4_sist(f, a, b, N, y0)
     h = (b-a)/N;
     x = a:h:b;
     x = x(:);
@@ -8,8 +8,9 @@ function [x, y] = AB4_sist(f, a, b, N, y0)
     y = zeros(N+1, length(y0));
     y(1,:) = y0;
     
-    for k=1:N
-        k1 = feval(f, x(k), y(k,:))';
+    for k=1:3
+        ff(k,:) = feval(f, x(k), y(k,:))';
+        k1 = ff(k);
         k2 = feval(f, x(k) + (h/2), y(k,:) + (h/2)*k1)';
         k3 = feval(f, x(k) + (h/2), y(k,:) + (h/2)*k2)';
         k4 = feval(f, x(k+1), y(k,:) + h*k3)';
