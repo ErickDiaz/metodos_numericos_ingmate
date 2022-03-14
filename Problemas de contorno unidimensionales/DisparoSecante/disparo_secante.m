@@ -1,7 +1,7 @@
 function [x,y, t, iter, incre] = disparo_secante(pvi, a, b, N, alfa, beta, maxiter, tol)
 
     %Vector de nodos
-    h = (b-a)/N;
+    h = (b-a)/(N+1);
     x = a:h:b;
     x = x(:);
 
