@@ -1,4 +1,7 @@
 function [x,iter,v] = jacobi(A,b,x0,tol,maxiter)
+    % Cambiando a vector columna
+    b = b(:);
+    x0 = x0(:);
 
     % Diagonal inferior
     L = tril(A,-1);
@@ -31,8 +34,7 @@ function [x,iter,v] = jacobi(A,b,x0,tol,maxiter)
         disp('Solucion encontrada')
         disp("iteraciones")
         disp(iter)
+        disp("incre")
+        disp(incre)
     end
 end
-% A = [5 -1 1 ; 2 8 -1 ; -1 1 4]
-% b = [10 11 3]'
-% [x,iter,v] = jacobi(A,b,[1 -2 3]',1e-7,5000)
