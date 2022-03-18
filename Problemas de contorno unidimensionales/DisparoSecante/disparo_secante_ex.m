@@ -4,8 +4,8 @@ function [x,y, t, iter, incre] = disparo_secante_ex(pvi, a, b, N, alfa, beta, ma
     x = a:h:b;
     x = x(:);
 
-    t0=beta;
-    t1=(beta-alfa)/(b-a);
+    t0=0.5;
+    t1=0.25;
 
     [x, y0] = RungeKutta_sistema(pvi, a, b, N, [alfa, t0]);
     yb0 = y0(end,1);

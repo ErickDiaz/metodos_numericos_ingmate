@@ -33,7 +33,6 @@ function [X,Y,iter,incr] = diferenciasfinitas_nolineal(f,fy,fz,a,b,alfa,beta,N,m
         
         incr = max(abs(v));
         iter = iter+1;
-        disp(x)
     end
 
     X = X(:);

@@ -1,3 +1,4 @@
+.
 function [x,t,U] = explicito(cc1,cc2,ci,a,b,nx,Tmax,nt,alfa)
 % Parabolico explicito
 % Parametros
